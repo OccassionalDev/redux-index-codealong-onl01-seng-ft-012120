@@ -9,5 +9,11 @@ class TodosContainer extends React.Component {
     );
   }
 };
+
+mapStateToProps = state => {
+  return {
+    todos: state.todos
+  }
+}
  
 export default connect()(TodosContainer);
