@@ -2,7 +2,12 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 class TodosContainer extends React.Component {
-  
-}
-
-export default TodosContainer
+ 
+  render() {
+    return(
+      <div></div>
+    );
+  }
+};
+ 
+export default connect()(TodosContainer);
