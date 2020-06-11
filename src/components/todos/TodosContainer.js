@@ -4,6 +4,10 @@ import Todo from './Todo'
 
 class TodosContainer extends React.Component {
  
+ renderTodos = () => {
+   this.props.todos.map((todo, id) => <Todo key={ id } text={ todo })
+ }
+ 
   render() {
     return(
       <div></div>
